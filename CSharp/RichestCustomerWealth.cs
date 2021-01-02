@@ -6,7 +6,7 @@ public class Solution {
             System.Console.WriteLine("Row({0}): ", n); 
             
             for (int k = 0; k < accounts[n].Length; k++) { 
-                System.Console.WriteLine("{0} ", accounts[n][k]); 
+                System.Console.Write("{0} ", accounts[n][k]); 
                 tempResult += accounts[n][k];
                 if(result < tempResult){
                      result = tempResult;
