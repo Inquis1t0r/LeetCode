@@ -7,8 +7,8 @@ public class Solution {
             for (int k = 0; k < accounts[n].Length; k++) { 
                 System.Console.Write("{0} ", accounts[n][k]); 
             } 
-            System.Console.WriteLine(); 
-            return result;
+            System.Console.WriteLine();      
         } 
+        return result;
     }
 }
