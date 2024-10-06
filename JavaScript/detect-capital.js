@@ -8,7 +8,10 @@ var detectCapitalUse = function(word) {
     
     if(!firstTwoLetters == firstTwoLetters.toUpperCase()){
         return false;
+    }else if(word[0] + word.slice(1).toLowerCase() == word){ //That single test case with single lowercase char
+        return true;
     }else{
-        return word == wholeWordToUpper;
+         return word == wholeWordToUpper;   
     }
+
 };
