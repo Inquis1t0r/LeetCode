@@ -3,5 +3,5 @@ My solutions for LeetCode challenges
 
 Progress: !!!
 TODO: 
-- [ ] Stats
+- [ ] Stats + badges
 - [ ] Split per language
