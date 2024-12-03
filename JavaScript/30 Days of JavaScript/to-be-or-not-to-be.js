@@ -1,10 +1,27 @@
 // 2704. To Be Or Not To Be
+// What a BS 
+/**
 /**
  * @param {string} val
  * @return {Object}
  */
 var expect = function(val) {
-    
+    return {
+        toBe: function (otherVal) {
+            if (val === otherVal) {
+                return { value: true } ;
+            } else {
+                throw new Error("Not Equal");
+            }
+        },
+        notToBe: function (otherVal) {
+            if (val !== otherVal) {
+                return { value: true };
+            } else {
+                throw new Error("Equal");
+            }
+        }
+    };
 };
 
 /**
