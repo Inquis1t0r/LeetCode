@@ -3,6 +3,7 @@
  * @return {number}
  */
 var arrangeCoins = function(n) {
+    if(n == 1) {return n};
     let row = 0;
     while(n > 0){
         row++
