@@ -6,8 +6,8 @@ var arrangeCoins = function(n) {
     if(n == 1) {return n};
     let row = 0;
     while(n > 0){
-        row++
+        row++;
         n = n -1 * row;
     }
-    return row-1;
+    return n < 0 ? row-1 : row;
 };
