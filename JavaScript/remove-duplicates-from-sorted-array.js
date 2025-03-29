@@ -3,21 +3,19 @@
  * @return {number}
  */
 var removeDuplicates = function(nums) {
-    let uniqueArray = [];
+    let length = nums.length;
 
-    for (let i = 0; i < nums.length; i++) {
-        let exists = false;
-
-        for (let j = 0; j < uniqueArray.length; j++) {
-            if (nums[i] === uniqueArray[j]) {
-                exists = true;
-                break;
+    for (let i = 0; i < length; i++) {
+        for (let j = i + 1; j < length; j++) {
+            if (nums[i] === nums[j]) {
+                for (let k = j; k < length - 1; k++) {
+                    nums[k] = nums[k + 1];
+                }
+                length--;  
+                j--; 
             }
         }
-
-        if (!exists) {
-            uniqueArray.push(nums[i]);
-        }
     }
-    return uniqueArray;
+
+    nums.length = length; 
 };
