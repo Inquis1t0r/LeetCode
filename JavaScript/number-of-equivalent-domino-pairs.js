@@ -3,5 +3,5 @@
  * @return {number}
  */
 var numEquivDominoPairs = function(dominoes) {
-    //TODO:
+    //TODO: Verify input + logic to "rotate" domino 
 };
