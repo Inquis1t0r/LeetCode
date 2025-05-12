@@ -3,6 +3,7 @@
  * @return {number}
  */
 var numEquivDominoPairs = function(dominoes) {
+    //TODO: Rework this algo
     const seen = new Map();
     const normalized = dominoes.map(pair => pair.slice().sort().join(','));
 
