@@ -10,10 +10,10 @@ var numEquivDominoPairs = function(dominoes) {
     const key = pair.slice().sort((a, b) => a - b).toString();
 
         if (map.has(key)) {
-        count += map.get(key);
-        map.set(key, map.get(key) + 1);
+            count += map.get(key);
+            map.set(key, map.get(key) + 1);
         } else {
-        map.set(key, 1);
+            map.set(key, 1);
         }
     }
 
