@@ -4,5 +4,6 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-    
+    //let concatenatedInput = s.join();
+    console.log(s);
 };
