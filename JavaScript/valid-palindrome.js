@@ -4,6 +4,8 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-    //let concatenatedInput = s.join();
-    console.log(s);
+    let concatenatedInput = s.replace(/[^a-z0-9]/gi, '').toLowerCase();
+    let reversedConcatenatedInput = concatenatedInput.split('').reverse().join('');
+
+    return concatenatedInput === reversedConcatenatedInput;
 };
