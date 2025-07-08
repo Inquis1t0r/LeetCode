@@ -3,8 +3,13 @@
  * @return {number[]}
  */
 var plusOne = function(digits) {
-    digits[digits.length-1] = digits[digits.length-1]+1;
-    //console.log(digits[digits.length-1]+1);
-    //TODO: Split when > 9
+    if(digits[digits.length-1]+1 < 9){
+        digits[digits.length-1] = digits[digits.length-1]+1;
+    }else{
+        //TODO: Split when > 9
+        digits[digits.length-1] = 1;
+        digits[digits.length] = 0;
+    }
+
     return digits;
 };
