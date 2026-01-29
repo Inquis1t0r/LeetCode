@@ -3,6 +3,11 @@ import java.util.Map;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
+
+    if (nums == null || nums.length < 2) {
+        return new int[] {};
+    }
+
     Map<Integer, Integer> seen = new HashMap<>(nums.length, 1.0f);
 
         for (int i = 0; i < nums.length; i++) {
@@ -15,6 +20,6 @@ class Solution {
             seen.put(nums[i], i);
         }
         
-        return new int[] {}; 
+        return new int[] {};
     }
 }
