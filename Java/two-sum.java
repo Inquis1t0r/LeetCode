@@ -8,7 +8,7 @@ class Solution {
             return new int[] {};
         }
 
-        Map < Integer, Integer > seen = new HashMap < > (nums.length, 1.0 f);
+        Map<Integer, Integer> seen = new HashMap<> (nums.length, 1.0 f);
 
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
