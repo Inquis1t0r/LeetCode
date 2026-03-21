@@ -1,9 +1,22 @@
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        if(nums.size() < 2){
-            return vector<int>();
+        unordered_map<int, int> seen; // value -> index
+
+        for (int i = 0; i < nums.size(); i++) {
+            int complement = target - nums[i];
+
+            if (seen.count(complement)) {
+                return {seen[complement], i};
+            }
+
+            seen[nums[i]] = i;
         }
-        return vector<int>();
+
+        return {}; // no solution found
     }
 };
