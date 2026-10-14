@@ -1,4 +1,5 @@
 public class Solution {
+    [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveOptimization)]
     public int Reverse(int x) {
         int result = 0;
 
