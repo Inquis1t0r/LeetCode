@@ -3,11 +3,12 @@ public class Solution {
         int result = 0;
 
         while (x != 0) {
-            if (result > 214748364 || result < -214748364)
+            if ((uint)(result + 214748364) > 429496728u)
                 return 0;
 
-            result = result * 10 + x % 10;
-            x /= 10;
+            int q = x / 10;
+            result = result * 10 + (x - q * 10);
+            x = q;
         }
 
         return result;
